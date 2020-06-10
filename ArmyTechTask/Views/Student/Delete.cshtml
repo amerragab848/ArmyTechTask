@@ -1,4 +1,4 @@
-﻿@model ArmyTechTask.Models.StudentVM
+﻿@model ArmyTechTask.Models.StudentListingVM
 
 @{
     ViewBag.Title = "Delete";
@@ -29,32 +29,33 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.GovernorateId)
+            @Html.DisplayNameFor(model => model.Governorate)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.GovernorateId)
+            @Html.DisplayFor(model => model.Governorate)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.NeighborhoodId)
+            @Html.DisplayNameFor(model => model.Neighborhood)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.NeighborhoodId)
+            @Html.DisplayFor(model => model.Neighborhood
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.FieldId)
+            @Html.DisplayNameFor(model => model.Field)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.FieldId)
+            @Html.DisplayFor(model => model.Field)
         </dd>
 
     </dl>
 
-    @using (Html.BeginForm()) {
+    @using (Html.BeginForm())
+    {
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
