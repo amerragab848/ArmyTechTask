@@ -36,6 +36,14 @@ namespace DataAccessL.Repository
             return res;
         }
 
+        public Student GetByStdId(int? id)
+        {
+            var std = context.Students.Include(c => c.Governorate).Include(c=>c.Field).
+                Include(c=>c.Neighborhood).
+                FirstOrDefault(c => c.ID == id);
+            return std;
+        }
+
         public List<Student> GetUsersDataByManagerId(int id)
         {
             throw new NotImplementedException();

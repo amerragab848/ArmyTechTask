@@ -9,5 +9,6 @@ namespace DataAccessL.Repository
     public interface IBaserepository<T> :IRepository<T>where T :class
     {
         List<T> GetUsersDataByManagerId(int id);
+          T GetByStdId(int? id);
     }
 }

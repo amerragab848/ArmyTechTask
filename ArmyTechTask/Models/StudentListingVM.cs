@@ -10,7 +10,7 @@ namespace ArmyTechTask.Models
     {
         public int ID { get; set; }
         public string Name { get; set; }
-        public DateTime BirthDate { get; set; }
+        public string BirthDate { get; set; }
         public string Governorate { get; set; }
         public string Neighborhood { get; set; }
         public string Field { get; set; }

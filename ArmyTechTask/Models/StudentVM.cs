@@ -11,7 +11,7 @@ namespace ArmyTechTask.Models
     {
         public int ID { get; set; }
         public string Name { get; set; }
-        public DateTime BirthDate { get; set; }
+        public string BirthDate { get; set; }
         [Display(Name = "Governorate")]
         public int GovernorateId { get; set; }
         [Display(Name = "Neighborhood")]
@@ -35,5 +35,10 @@ namespace ArmyTechTask.Models
             get;
             set;
         } = new List<SelectListItem>();
+        public GovernorateVM GovernorateVM { get; set; }
+        public NeighborhoodVM NeighborhoodVM { get; set; }
+
+        public FieldVM FieldVM { get; set; }
+
     }
 }

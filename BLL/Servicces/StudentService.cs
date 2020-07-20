@@ -39,6 +39,12 @@ namespace BLL.Servicces
             var student = GetAllStudents().Where(c => c.ID == id).FirstOrDefault();
             return student;
         }
+        public Student GetByStdId(int? id)
+        {
+            var student = repository.GetByStdId(id);
+            return student;
+        }
+        
         public void InsertStudent(Student entity)
         {
             if (entity != null)
